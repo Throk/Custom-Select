@@ -1,0 +1,22 @@
+/**
+ * Custom Select - jQuery plugin
+ * 
+ * Creates a visually custom data select
+ * 
+ * @author Throk <k.borecki@throk.pl>
+ * @copyright (c) 2016 Throk
+ * @version 1.0
+ */
+
+div.custom-select { height: 30px; width: 100%; position: relative; padding-left: 15px; background: white; border: 1px solid #eeeeee; }
+div.custom-select .custom-value { height: 100%; width: 100%; cursor: pointer; position: relative; }
+div.custom-select .custom-value:after { content: "▾"; display: block; width: 100%; text-align: right; left: 0px; top: 50%; padding-right: 2%; position: absolute; transform: translate(0px, -50%); font-size: 16px; }
+div.custom-select .custom-value .default { position: absolute; top: 50%; transform: translate(0px, -50%); color: #dedede; font-size: 13px; }
+div.custom-select .custom-value .default.selected { color: black; }
+div.custom-select .custom-values { max-height: 165px; overflow: auto; width: calc(100% + 2px); display: none; position: absolute; top: calc(100% + 1px); left: -1px; background: white; box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.20); }
+div.custom-select .custom-values .value { padding: 10px 0px; cursor: pointer; }
+div.custom-select .custom-values .value:hover { background: #ececec; }
+div.custom-select .custom-values .value:first-child { color: #dddddd; }
+
+div.custom-select.active { z-index: 1; }
+div.custom-select.active .custom-value:after { content: "▴"; }
