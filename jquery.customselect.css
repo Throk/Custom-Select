@@ -8,7 +8,7 @@
  * @version 1.0
  */
 
-div.custom-select { height: 30px; width: 100%; position: relative; padding-left: 15px; background: white; border: 1px solid #eeeeee; }
+div.custom-select { height: 30px; width: 100%; max-width: 200px; position: relative; padding-left: 15px; background: white; border: 1px solid #eeeeee; }
 div.custom-select .custom-value { height: 100%; width: 100%; cursor: pointer; position: relative; }
 div.custom-select .custom-value:after { content: "▾"; display: block; width: 100%; text-align: right; left: 0px; top: 50%; padding-right: 2%; position: absolute; transform: translate(0px, -50%); font-size: 16px; }
 div.custom-select .custom-value .default { position: absolute; top: 50%; transform: translate(0px, -50%); color: #dedede; font-size: 13px; }
