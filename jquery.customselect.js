@@ -24,7 +24,7 @@
             class_default: ".default",
             class_value: ".value",
             speed: 550,
-            default_text: "- wybierz -"
+            default_text: "- select -"
         }, options );
 
         initEvents();
